@@ -1,21 +1,13 @@
 .footer {
   background-color: $bottomColor;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
-  &__conteiner {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-  &__list {
-    margin-right: 70px;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+
   &__info {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -33,16 +25,19 @@
     color: $whiteColor;
   }
   &__text {
-    text-align: left;
+    text-align: center;
     letter-spacing: 0.03em;
     font-weight: 700;
     line-height: 1.142;
     color: $whiteColor;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 30px;
   }
   &__form {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+
+    flex-direction: column;
   }
   &__input {
     width: 358px;
@@ -55,7 +50,23 @@
     background-color: #2f303a;
     margin-top: 20px;
   }
+  .text--margin {
+    margin-left: 50px;
+  }
 }
-.text--margin {
-  margin-left: 93px;
+@media (max-width: 1199px) {
+  .logo--footer {
+    padding-left: 100px;
+  }
+}
+@media (min-width: 1199px) {
+  .logo--footer {
+    padding-left: 0;
+  }
+  .footer__conteiner {
+    text-align: left;
+  }
+  .footer__box {
+    margin-left: 70px;
+  }
 }

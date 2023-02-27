@@ -1,17 +1,20 @@
 .description {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   margin-top: 95px;
+
   &__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   &__item {
-    margin-left: 30px;
-    width: 251px;
+    margin-left: 40px;
+    max-width: 450px;
     height: 270px;
   }
   &__title {
@@ -34,5 +37,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .description__item {
+    max-width: 370px;
+  }
+}
+@media (min-width: 769px) {
+  .description__item {
+    max-width: 270px;
   }
 }

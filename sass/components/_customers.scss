@@ -1,5 +1,5 @@
 .customers {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -15,8 +15,10 @@
   &__list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     padding-bottom: 152px;
+    gap: 15px;
   }
   &__image {
     width: 170px;

@@ -1,6 +1,7 @@
 .contact {
   display: flex;
-  gap: 50px;
+  gap: 15px;
+  flex-wrap: wrap;
   &__text {
     text-decoration: none;
     text-align: left;

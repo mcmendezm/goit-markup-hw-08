@@ -20,6 +20,7 @@
 @import "./components/is-hidden";
 @import "./components/modal";
 @import "./components/form";
+@import "./components/container";
 body {
   color: $blackColor;
   font-family: roboto, sans-serif;
@@ -48,5 +49,4 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 800px;
 }
