@@ -1,0 +1,15 @@
+.header {
+  height: 80px;
+  border-radius: 0px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    @extend .header;
+  }
+}

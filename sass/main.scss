@@ -1,0 +1,52 @@
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/menu";
+@import "./components/contact";
+@import "./components/request";
+@import "./components/button";
+@import "./components/description";
+@import "./components/sevices";
+@import "./components/team";
+@import "./components/card-services";
+@import "./components/card-team";
+@import "./components/networks";
+@import "./components/customers";
+@import "./components/footer";
+@import "./components/gallery";
+@import "./components/card-gallery";
+@import "./components/backdrop";
+@import "./components/is-hidden";
+@import "./components/modal";
+@import "./components/form";
+body {
+  color: $blackColor;
+  font-family: roboto, sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 800px;
+}

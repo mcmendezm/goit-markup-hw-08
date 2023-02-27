@@ -1,0 +1,29 @@
+.card-services {
+  padding-top: 55px;
+  &__image {
+    width: 370px;
+    height: 294px;
+    color: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__text {
+    height: 70px;
+    width: 370px;
+    background-color: $bottomColor;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.image--one {
+  background-image: url("../../images/image1.jpg");
+}
+.image--two {
+  background-image: url("../../images/image2.jpg");
+}
+.image--three {
+  background-image: url("../../images/image3.jpg");
+}
