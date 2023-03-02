@@ -12,6 +12,16 @@
   align-items: center;
   gap: 50px;
   background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-    url(../../images/bottom.jpg);
+    url(../../images/bottom-1x.jpg);
+  background-size: cover;
   padding: 118px 60px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .request {
+    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+      url(../../images/bottom-2x.jpg);
+    background-size: cover;
+  }
 }

@@ -1,10 +1,11 @@
 .container {
-  min-width: 320px;
-  max-width: 1170px;
+  max-width: 900px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: end;
 }
 
 .page-header {
@@ -19,42 +20,28 @@
   justify-content: flex-end;
 }
 
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 @media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
   .contact {
     display: none;
   }
+  .menu {
+    display: none;
+  }
 }
 
-.menu .link {
+.contact .link {
   padding: 10px;
-  color: inherit;
   text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
 }
 
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
-  align-items: center;
+  align-items: end;
+  padding-right: 60px;
   justify-content: center;
-
   margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -70,7 +57,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: $blueColor;
 }
 
 .menu-container {
@@ -80,7 +67,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #ffffff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -95,7 +82,6 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
 }
 
 .mobile-menu {
@@ -107,6 +93,56 @@
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+
   text-decoration: none;
+}
+
+.mobile-menu__networks {
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+  padding-top: 64px;
+}
+.mobile-menu__list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  padding-top: 50px;
+}
+.mobile-menu__list .link:hover,
+.mobile-menu__list .link:focus {
+  color: $blueColor;
+}
+
+.networks__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $blueColor;
+}
+.mobile-menu__contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: $letterColor;
+  padding-top: 200px;
+}
+.networks__link::after {
+  background-image: url("../../images/Línea\ 1.jpg");
+}
+
+.mobile-menu__contact .link:hover,
+.mobile-menu__contact .link:focus {
+  color: $blueColor;
+  font-size: 34px;
 }

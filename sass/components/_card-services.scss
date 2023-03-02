@@ -19,11 +19,27 @@
   }
 }
 .image--one {
-  background-image: url("../../images/image1.jpg");
+  background-image: url("../../images/image1-1x.jpg");
 }
 .image--two {
-  background-image: url("../../images/image2.jpg");
+  background-image: url("../../images/image2-1x.jpg");
 }
 .image--three {
-  background-image: url("../../images/image3.jpg");
+  background-image: url("../../images/image3-1x.jpg");
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .image--one {
+    background-image: url("../../images/image1-2x.jpg");
+    background-size: cover;
+  }
+  .image--two {
+    background-image: url("../../images/image2-2x.jpg");
+    background-size: cover;
+  }
+  .image--three {
+    background-image: url("../../images/image3-2x.jpg");
+    background-size: cover;
+  }
 }

@@ -18,29 +18,6 @@
     />
   </head>
   <body>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">Estudio</a></li>
-        <li><a href="" class="link">Portafolio</a></li>
-        <li><a href="" class="link">Contactos</a></li>
-      </ul>
-    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
@@ -140,34 +117,6 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a class="contact__text" href="mailto:info@devstudio.com">
-              <svg
-                class="contact__image"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="12"
-              >
-                <use href="./images/icons.svg#icon-sobre"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a class="contact__text" href="tel:+525555296000">
-              <svg
-                class="contact__image"
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="16"
-              >
-                <use href="./images/icons.svg#icon-telefono-inteligente"></use>
-              </svg>
-              +52 55 5529 6000</a
-            >
-          </li>
-        </ul>
       </div>
       <div class="container">
         <button
@@ -190,9 +139,33 @@
           </svg>
         </button>
 
-        <ul class="menu">
-          <li><a href="" class="link">Ab</a></li>
-          <li><a href="" class="link">Products</a></li>
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__text link" href="mailto:info@devstudio.com">
+              <svg
+                class="contact__image"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="12"
+              >
+                <use href="./images/icons.svg#icon-sobre"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a class="contact__text link" href="tel:+525555296000">
+              <svg
+                class="contact__image"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-telefono-inteligente"></use>
+              </svg>
+              +52 55 5529 6000</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -281,7 +254,7 @@
         <ul class="team__list">
           <li class="card-team">
             <img
-              src="images/Andres.jpg"
+              srcset="images/Andres-1x.jpg 1x, images/Andres-2x.jpg 2x"
               alt="Empleado Andrés Cubo"
               width="270"
             />
@@ -342,7 +315,7 @@
           </li>
           <li class="card-team">
             <img
-              src="images/Carla.jpg"
+              srcset="images/Carla-1x.jpg 1x, images/Carla-2x.jpg 2x"
               alt="Empleada Carla Palacios"
               width="270"
             />
@@ -403,7 +376,7 @@
           </li>
           <li class="card-team">
             <img
-              src="images/Mario.jpg"
+              srcset="images/Mario-1x.jpg 1x, images/Mario-2x.jpg 2x"
               alt="Empleado Mario Dorado"
               width="270"
             />
@@ -464,7 +437,7 @@
           </li>
           <li class="card-team">
             <img
-              src="images/Pablo.jpg"
+              srcset="images/Pablo-1x.jpg 1x, images/Pablo-2x.jpg 2x"
               alt="Empleado Pablo Mijangos"
               width="270"
             />
@@ -603,6 +576,46 @@
         </ul>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li><a href="./index.html" class="link">Estudio</a></li>
+          <li><a href="./portafolio.html" class="link">Portafolio</a></li>
+          <li><a href="#" class="link">Contactos</a></li>
+        </ul>
+        <ul class="mobile-menu__contact">
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__networks">
+          <li><a href="#" class="networks__link">Instagram</a></li>
+          <li><a href="#" class="networks__link">Twitter</a></li>
+          <li><a href="#" class="networks__link">Facebook</a></li>
+          <li><a href="#" class="networks__link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer__conteiner">
         <a class="logo logo--footer" href="#">WebStudio</a>
@@ -632,7 +645,7 @@
         </address>
       </div>
       <div>
-        <div class="footer__box">
+        <div class="footer__info">
           <h3 class="footer__text">ENCUENTRENOS EN</h3>
           <ul class="networks">
             <li class="networks-footer__item">
@@ -715,5 +728,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
