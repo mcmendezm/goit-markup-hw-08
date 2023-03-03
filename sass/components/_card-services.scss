@@ -20,12 +20,15 @@
 }
 .image--one {
   background-image: url("../../images/image1-1x.jpg");
+  background-size: cover;
 }
 .image--two {
   background-image: url("../../images/image2-1x.jpg");
+  background-size: cover;
 }
 .image--three {
   background-image: url("../../images/image3-1x.jpg");
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
